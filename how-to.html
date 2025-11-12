@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myDIY | How-To Guides</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">myDIY</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="knowledge.html">Knowledge Repository</a>
+                <a href="hobbies.html">Hobby Hub</a>
+                <a class="active" href="how-to.html">How-To Guides</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page-hero">
+            <div class="container narrow">
+                <h2>How-To Toolkit</h2>
+                <p>Follow along with foundational repair and maintenance tasks that every handy person should know.</p>
+            </div>
+        </section>
+
+        <section class="howto-list">
+            <div class="container">
+                <article class="howto-card">
+                    <header>
+                        <h3>Patch a Drywall Hole</h3>
+                        <span class="badge badge-beginner">Beginner</span>
+                    </header>
+                    <ol>
+                        <li>Cut a square around the damaged area and remove loose drywall.</li>
+                        <li>Measure and cut a patch to fit snugly, securing it with backing strips.</li>
+                        <li>Apply joint compound and tape, feathering the edges before sanding smooth.</li>
+                    </ol>
+                </article>
+                <article class="howto-card">
+                    <header>
+                        <h3>Replace a Faucet</h3>
+                        <span class="badge badge-intermediate">Intermediate</span>
+                    </header>
+                    <ol>
+                        <li>Shut off water supply lines and relieve pressure by opening the faucet.</li>
+                        <li>Disconnect supply hoses, remove mounting hardware, and lift out the old faucet.</li>
+                        <li>Install the new faucet, tighten fittings, and check for leaks once water is restored.</li>
+                    </ol>
+                </article>
+                <article class="howto-card">
+                    <header>
+                        <h3>Wire a Light Switch</h3>
+                        <span class="badge badge-advanced">Advanced</span>
+                    </header>
+                    <ol>
+                        <li>Turn off the circuit at the breaker and verify with a voltage tester.</li>
+                        <li>Remove the old switch, noting line, load, and ground conductors.</li>
+                        <li>Terminate the new switch according to wiring diagram, secure the box, and restore power.</li>
+                    </ol>
+                </article>
+                <article class="howto-card">
+                    <header>
+                        <h3>Tune a Lawn Mower</h3>
+                        <span class="badge badge-beginner">Beginner</span>
+                    </header>
+                    <ol>
+                        <li>Disconnect the spark plug and drain old fuel.</li>
+                        <li>Replace the air filter, spark plug, and sharpen the blade.</li>
+                        <li>Refill with fresh fuel, check oil level, and test-run the mower.</li>
+                    </ol>
+                </article>
+                <article class="howto-card">
+                    <header>
+                        <h3>Winterize Outdoor Faucets</h3>
+                        <span class="badge badge-intermediate">Intermediate</span>
+                    </header>
+                    <ol>
+                        <li>Disconnect hoses and install insulated faucet covers.</li>
+                        <li>Shut off interior supply valves and open bleeder caps to drain water.</li>
+                        <li>Check exterior faucets for leaks and re-tighten caps after drainage.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Suggest a How-To Topic</h2>
+                <p>Let us know what you want to learn next and we'll build a guide tailored to your needs.</p>
+                <a class="button" href="mailto:guides@mydiy.com">Submit a Request</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> myDIY. Built for makers, fixers, and doers.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

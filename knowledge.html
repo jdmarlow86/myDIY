@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myDIY | Knowledge Repository</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">myDIY</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a class="active" href="knowledge.html">Knowledge Repository</a>
+                <a href="hobbies.html">Hobby Hub</a>
+                <a href="how-to.html">How-To Guides</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page-hero">
+            <div class="container narrow">
+                <h2>Knowledge Repository</h2>
+                <p>Reference manuals, safety checklists, and troubleshooting frameworks curated by experienced tradespeople. Browse the categories below to deepen your skills.</p>
+            </div>
+        </section>
+
+        <section class="knowledge-grid">
+            <div class="container">
+                <article class="knowledge-card" id="auto">
+                    <h3>Automotive Mechanics</h3>
+                    <ul>
+                        <li><strong>Engine Diagnostics:</strong> Use OBD-II scanner workflows and compression tests to isolate engine problems.</li>
+                        <li><strong>Brake Systems:</strong> Service drums and discs, bleed hydraulic lines, and measure rotor wear.</li>
+                        <li><strong>Preventative Maintenance:</strong> Seasonal inspection checklist covering belts, fluids, filters, and tires.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-card">
+                    <h3>Carpentry</h3>
+                    <ul>
+                        <li><strong>Framing Essentials:</strong> Wall, roof, and deck framing diagrams with load span references.</li>
+                        <li><strong>Finish Carpentry:</strong> Trim installation, cabinet alignment, and joinery techniques for a polished look.</li>
+                        <li><strong>Tool Calibration:</strong> Keep saws, planers, and sanders tuned for clean, accurate cuts.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-card">
+                    <h3>Electrical</h3>
+                    <ul>
+                        <li><strong>Residential Wiring:</strong> Circuit planning, breaker sizing, and NEC-compliant junction box layouts.</li>
+                        <li><strong>Troubleshooting:</strong> Diagnostic flowcharts for tracing shorts, overloads, and voltage drops.</li>
+                        <li><strong>Safety Protocols:</strong> Lockout/tagout steps and PPE recommendations for common jobs.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-card">
+                    <h3>Plumbing</h3>
+                    <ul>
+                        <li><strong>Fixture Installation:</strong> Setting toilets, sinks, and faucets with watertight seals.</li>
+                        <li><strong>Drainage:</strong> Snaking clogs, venting best practices, and slope calculations.</li>
+                        <li><strong>Pipe Work:</strong> Soldering copper, solvent welding PVC, and using press-fit connections.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-card">
+                    <h3>HVAC</h3>
+                    <ul>
+                        <li><strong>System Diagnostics:</strong> Refrigerant pressure charts, airflow testing, and thermostat calibration.</li>
+                        <li><strong>Maintenance:</strong> Filter schedules, coil cleaning techniques, and condensate management.</li>
+                        <li><strong>Retrofit Planning:</strong> Load calculations and duct sizing for remodels and additions.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-card">
+                    <h3>Masonry</h3>
+                    <ul>
+                        <li><strong>Mortar Mixing:</strong> Ratios, additives, and curing timelines for different applications.</li>
+                        <li><strong>Structural Repair:</strong> Crack stitching, lintel replacement, and tuckpointing tips.</li>
+                        <li><strong>Safety & Ergonomics:</strong> Handling heavy materials and preventing repetitive strain injuries.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="resource-callout">
+            <div class="container narrow">
+                <h3>Downloadable Resources</h3>
+                <p>Access printable checklists and templates to bring on the jobsite. New resources are added every month.</p>
+                <div class="resource-links">
+                    <a class="button" href="#">Inspection Checklist (PDF)</a>
+                    <a class="button button-secondary" href="#">Tool Maintenance Log (XLS)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> myDIY. Built for makers, fixers, and doers.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
