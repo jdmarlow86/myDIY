@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myDIY | Hobby Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">myDIY</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="knowledge.html">Knowledge Repository</a>
+                <a class="active" href="hobbies.html">Hobby Hub</a>
+                <a href="how-to.html">How-To Guides</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page-hero">
+            <div class="container narrow">
+                <h2>Hobby Hub</h2>
+                <p>Keep track of your DIY interests, prioritize what to learn next, and record wins along the way.</p>
+            </div>
+        </section>
+
+        <section class="hobby-manager">
+            <div class="container hobby-layout">
+                <form id="hobby-form" class="card">
+                    <h3>Add a Hobby</h3>
+                    <label for="hobby-name">Hobby Name</label>
+                    <input id="hobby-name" type="text" placeholder="e.g. Welding" required>
+
+                    <label for="hobby-goal">Goal / Outcome</label>
+                    <input id="hobby-goal" type="text" placeholder="Complete a MIG welding course" required>
+
+                    <label for="hobby-schedule">Schedule</label>
+                    <select id="hobby-schedule">
+                        <option value="Daily">Daily</option>
+                        <option value="Weekly" selected>Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                    </select>
+
+                    <button type="submit" class="button">Add Hobby</button>
+                </form>
+
+                <section class="card hobby-list">
+                    <header class="hobby-list__header">
+                        <h3>Your Hobbies</h3>
+                        <button id="clear-hobbies" class="button button-secondary" type="button">Clear All</button>
+                    </header>
+                    <ul id="hobby-items" class="hobby-items"></ul>
+                    <p id="empty-state" class="empty-state">No hobbies yet. Add one to start tracking your progress!</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="hobby-tips">
+            <div class="container">
+                <h3>Staying Consistent</h3>
+                <ul>
+                    <li>Create SMART goals for each hobby and break them into small milestones.</li>
+                    <li>Log your sessions immediately after completing them while details are fresh.</li>
+                    <li>Share your progress with a friend or mentor for accountability.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> myDIY. Built for makers, fixers, and doers.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/hobbies.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myDIY | Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">myDIY</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="knowledge.html">Knowledge Repository</a>
+                <a href="hobbies.html">Hobby Hub</a>
+                <a href="how-to.html">How-To Guides</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div>
+                    <h2>Empowering Blue Collar Craftspeople</h2>
+                    <p>myDIY is the go-to resource for mechanics, carpenters, electricians, and anyone who loves hands-on work. Explore our knowledge repository, organize your hobbies, and learn practical skills through detailed how-to guides.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="knowledge.html">Explore Knowledge</a>
+                        <a class="button button-secondary" href="hobbies.html">Manage Hobbies</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h3>Featured Skill</h3>
+                    <p>Learn how to diagnose engine issues with our step-by-step troubleshooting framework, designed by master mechanics.</p>
+                    <a href="knowledge.html#auto" class="text-link">Start learning &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <article class="feature-card">
+                    <h3>Trade Knowledge</h3>
+                    <p>Curated playbooks and reference guides for automotive, carpentry, electrical, plumbing, masonry, and more.</p>
+                    <a href="knowledge.html" class="text-link">Browse the repository</a>
+                </article>
+                <article class="feature-card">
+                    <h3>Hobby Management</h3>
+                    <p>Log ideas, track progress, and build habits for your passion projects in our interactive Hobby Hub.</p>
+                    <a href="hobbies.html" class="text-link">Go to the Hobby Hub</a>
+                </article>
+                <article class="feature-card">
+                    <h3>How-To Toolkit</h3>
+                    <p>Step-by-step walkthroughs for everyday fixes and improvements around the home, shop, or jobsite.</p>
+                    <a href="how-to.html" class="text-link">View how-to guides</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Share Your Expertise</h2>
+                <p>Have tips or methods to contribute? Join the myDIY community and help keep traditional skills thriving.</p>
+                <a class="button" href="mailto:community@mydiy.com">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> myDIY. Built for makers, fixers, and doers.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
