@@ -6,12 +6,33 @@
     --color-surface: #ffffff;
     --color-text: #1f2933;
     --color-muted: #6b7280;
+    --color-panel: #f1f5f9;
+    --color-border: #d2d6dc;
+    --color-action-muted: #e2e8f0;
+    --color-action-muted-hover: #cbd5f5;
+    --color-success-soft: #d1fae5;
+    --color-success: #10b981;
     --shadow-medium: 0 20px 35px rgba(15, 23, 42, 0.12);
     --shadow-small: 0 8px 20px rgba(15, 23, 42, 0.08);
     --radius-large: 18px;
     --radius-medium: 14px;
     --radius-small: 10px;
     font-size: 16px;
+}
+
+html.dark-mode {
+    --color-background: #0b1120;
+    --color-surface: #111827;
+    --color-text: #f8fafc;
+    --color-muted: #cbd5f5;
+    --color-panel: #1f2937;
+    --color-border: #334155;
+    --color-action-muted: #1f2937;
+    --color-action-muted-hover: #273449;
+    --color-success-soft: rgba(16, 185, 129, 0.18);
+    --color-success: #34d399;
+    --shadow-medium: 0 20px 35px rgba(0, 0, 0, 0.65);
+    --shadow-small: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -24,6 +45,7 @@ body {
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -53,7 +75,17 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
     padding: 1rem 0;
+}
+
+.site-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .logo {
@@ -76,6 +108,31 @@ img {
 .main-nav a:hover,
 .main-nav a.active {
     color: var(--color-primary);
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    background: transparent;
+    color: var(--color-text);
+    font-weight: 600;
+    padding: 0.35rem 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    background: var(--color-panel);
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.theme-toggle__icon {
+    font-size: 1rem;
 }
 
 .button {
@@ -257,8 +314,11 @@ select {
     margin-top: 0.35rem;
     padding: 0.65rem 0.75rem;
     border-radius: var(--radius-small);
-    border: 1px solid #d2d6dc;
+    border: 1px solid var(--color-border);
     font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    background: var(--color-surface);
 }
 
 .hobby-list__header {
@@ -279,7 +339,7 @@ select {
 .hobby-item {
     display: grid;
     gap: 0.2rem;
-    background: #f1f5f9;
+    background: var(--color-panel);
     padding: 1rem;
     border-radius: var(--radius-small);
 }
@@ -304,13 +364,13 @@ select {
     border: none;
     cursor: pointer;
     font-weight: 600;
-    background: #e2e8f0;
+    background: var(--color-action-muted);
     color: var(--color-text);
     transition: background 0.2s ease;
 }
 
 .hobby-item__actions button:hover {
-    background: #cbd5f5;
+    background: var(--color-action-muted-hover);
 }
 
 .hobby-item__actions button.complete {
@@ -319,8 +379,8 @@ select {
 }
 
 .hobby-item--completed {
-    background: #d1fae5;
-    border: 1px solid #10b981;
+    background: var(--color-success-soft);
+    border: 1px solid var(--color-success);
 }
 
 .empty-state {
